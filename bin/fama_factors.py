@@ -29,7 +29,7 @@ class Strategy:
         self.log = open(file_name_str, 'w')
         self.da = DataAccess(self.log)
         self.dp = DataProcessing(self.log, self.da)
-        self.ms = ManekiStrategy(self.log, self.dp)
+        self.ms = ManekiStrategy(start_date, self.log, self.dp)
         self.daily_adjust_ratio_dict, self.today_ohlc_price = {}, {}
         self.initiated, self.CONST_BUY, self.CONST_SELL = True, 1, 2
         self.signal_list =[]
@@ -68,7 +68,7 @@ class Strategy:
             today_data_tmp = self.historical_daily_ohlc_np[np.where(self.historical_daily_ohlc_np[:, 0] == datetime.strptime(today_date, "%Y-%m-%d").date())]
             if len(today_data_tmp) > 0:
                 for product_daily in self.dp.today_ohlc_price:
-                    if product_daily in self.ms.stock_dict.keys():
+                    if product_daily in self.ms.stock_dict.keys() and product_daily in self.ms.fundamental_stock_dict.keys():
                         price = self.dp.today_ohlc_price[product_daily][5]
                         self.current_timestamp = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
                         today_total_volume = self.dp.today_ohlc_price[product_daily][6]
@@ -110,7 +110,7 @@ class Strategy:
             print "The arguments are incorrect."
 
     # Process Market Data
-    def onMarketDataUpdate(self,market, code, md):
+    def onMarketDataUpdate(self, market, code, md):
         if md.timestamp == "00000000_000000_000000":
             return
         # print "*****************************************************************************market data update***********************************************************"
@@ -191,7 +191,7 @@ class Strategy:
         return
 
     # Process Order
-    def onOrderFeed(self,order_feed):
+    def onOrderFeed(self, order_feed):
         print "========================= entry order_feed================================"
         return
 
@@ -200,10 +200,10 @@ class Strategy:
         self.ms.trade_management(trade_feed)
 
     # Process Position
-    def onPortfolioFeed(self,portfolioFeed):
+    def onPortfolioFeed(self, portfolioFeed):
         return
 
-    def onPnlperffeed(self,pnlfeed):
+    def onPnlperffeed(self, pnlfeed):
         print "PnL ",pnlfeed.dailyPnL,pnlfeed.monthlyPnL,pnlfeed.yearlyPnL
         return
 
@@ -293,6 +293,36 @@ class DataProcessing:
         msg = str(datetime.now()) + " Loading available stock, data length:" + str(len(data_stock_list))
         print_save_log(self.log, msg)
         return stock_dict
+
+    def get_fundamental_stock_list(self, timestamp):
+        fundamental_stock_dict={}
+        daily_stock_count = "select count(*) from daily_fundamental where from_days(to_days(timestamp))='" + str(timestamp) + "'";
+        stock_count = int(self.da.query_command(daily_stock_count));
+
+        stock_cap_range_start = int(stock_count / 3)
+        stock_cap_range_end = int(stock_count * 2 / 3)
+
+        stock_pe_range_start = int(stock_count/2)
+
+        stock_cap_list_query = "select instrument_id from daily_fundamental where from_days(to_days(timestamp))='" + str(timestamp) + "' order by cur_mkt_cap desc limit " + \
+                               str(stock_cap_range_start) + ", " + str(stock_cap_range_end) + ";"
+
+        stock_pe_list_query = "select instrument_id from daily_fundamental where from_days(to_days(timestamp))='" + str(timestamp) + "' order by pe_ratio desc limit " + \
+                              str(stock_pe_range_start) + ", " + str(stock_pe_range_start) + ";"
+
+        data_stock_cap_list = self.da.query_command(stock_cap_list_query)
+
+        data_stock_pe_list = self.da.query_command(stock_pe_list_query)
+
+        for cap_instrument_id in data_stock_cap_list:
+            for pe_instrument_id in data_stock_pe_list:
+                if cap_instrument_id == pe_instrument_id:
+                    fundamental_stock_dict[cap_instrument_id] = pe_instrument_id
+
+        msg = str(datetime.now()) + " Loading fundamental stock, datetime: " + str(timestamp) + " data length:" + str(len(fundamental_stock_dict))
+        print_save_log(self.log, msg)
+
+        return fundamental_stock_dict
 
     def load_portfolios(self):
         portfolio_dict = {}
@@ -890,7 +920,7 @@ class DataAccess:
 class ManekiStrategy:
     historical_daily_price_start_date, load_historic_hourly_price_start_date = None, None
 
-    def __init__(self, log, dp):
+    def __init__(self, start_date, log, dp):
         print "Init ManekiStrategy"
         self.log, self.dp = log, dp
         config = ConfigParser.ConfigParser()
@@ -908,13 +938,14 @@ class ManekiStrategy:
         self.entry_condition_minimum_turnover = int(config.get("Buy_Logic", "entry_condition_minimum_turnover"))
         self.exit_condition_close_price_period = int(config.get("Buy_Logic", "exit_condition_close_price_period"))
         self.strategy_id = config.get("Trading_Environment", "strategy_id")
-        self.slippage_ratio =float(config.get("Trading_Environment", "slippage_ratio"))
+        self.slippage_ratio = float(config.get("Trading_Environment", "slippage_ratio"))
         self.trading_type = config.get("Trading_Environment", "trading_type")
         self.CONST_BUY, self.CONST_SELL = int(1), int(2)
         self.stop_loss_price = 0
         self.signal_risk_market_value = 0
         self.daily_realized_pnl_dict = {}
         self.stock_dict = self.dp.available_stock_dict.copy()
+        self.fundamental_stock_dict = self.dp.get_fundamental_stock_list(start_date)
         self.cash, self.available_cash, self.holding_cash = self.dp.get_asset_info()
         self.orders_np = self.dp.load_orders()
         self.portfolio_dict = self.dp.load_portfolios()

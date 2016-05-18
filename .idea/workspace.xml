@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d195fece-9531-4c56-a619-4db2bfe196ab" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/fama_factors.py" afterPath="$PROJECT_DIR$/bin/fama_factors.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/run_fama_market_close.sh" afterPath="$PROJECT_DIR$/bin/run_fama_market_close.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/run_fama_market_open.sh" afterPath="$PROJECT_DIR$/bin/run_fama_market_open.sh" />
+    </list>
+    <ignored path="algo_fama_factors.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="algo_fama_factors" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="fama_factors.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bin/fama_factors.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.69965076">
+              <caret line="112" column="33" selection-start-line="112" selection-start-column="33" selection-end-line="112" selection-end-column="33" />
+              <folding>
+                <element signature="e#6029#12248#0" expanded="false" />
+                <element signature="e#12317#12414#0" expanded="false" />
+                <element signature="e#21550#22737#0" expanded="false" />
+                <element signature="e#22774#23629#0" expanded="false" />
+                <element signature="e#76042#80288#0" expanded="false" />
+                <marker date="1463559367000" expanded="true" signature="16655:16772" placeholder="select cash,..missing_value..." />
+                <marker date="1463559367000" expanded="true" signature="18379:18459" placeholder="select times..." />
+                <marker date="1463559367000" expanded="true" signature="18910:18993" placeholder="select instr..missing_value..." />
+                <marker date="1463559367000" expanded="true" signature="19436:19512" placeholder="select count..daily_fundamental..." />
+                <marker date="1463559367000" expanded="true" signature="19436:19535" placeholder="select count..daily_fundamental..." />
+                <marker date="1463559367000" expanded="true" signature="19800:19936" placeholder="select instr..daily_fundamental..." />
+                <marker date="1463559367000" expanded="true" signature="19800:20006" placeholder="select instr..daily_fundamental..." />
+                <marker date="1463559367000" expanded="true" signature="20073:20154" placeholder="select instr..daily_fundamental..." />
+                <marker date="1463559367000" expanded="true" signature="20073:20206" placeholder="select instr..daily_fundamental..." />
+                <marker date="1463559367000" expanded="true" signature="20073:20207" placeholder="select instr..daily_fundamental..." />
+                <marker date="1463559367000" expanded="true" signature="20073:20274" placeholder="select instr..daily_fundamental..." />
+                <marker date="1463559367000" expanded="true" signature="21024:21129" placeholder="select instr..missing_value..." />
+                <marker date="1463559367000" expanded="true" signature="21595:21752" placeholder="select signa..." />
+                <marker date="1463559367000" expanded="true" signature="22342:22427" placeholder="update signa..." />
+                <marker date="1463559367000" expanded="true" signature="22818:23025" placeholder="select order..missing_value..." />
+                <marker date="1463559367000" expanded="true" signature="23876:24029" placeholder="insert into ..." />
+                <marker date="1463559367000" expanded="true" signature="24256:24468" placeholder="select times..." />
+                <marker date="1463559367000" expanded="true" signature="25459:25868" placeholder="select a.ins..missing_value..." />
+                <marker date="1463559367000" expanded="true" signature="25566:25685" placeholder="select max(t..." />
+                <marker date="1463559367000" expanded="true" signature="27845:28056" placeholder="select times..." />
+                <marker date="1463559367000" expanded="true" signature="29255:29524" placeholder="select times..." />
+                <marker date="1463559367000" expanded="true" signature="36793:36959" placeholder="select times..." />
+                <marker date="1463559367000" expanded="true" signature="39144:39282" placeholder="select instr..." />
+                <marker date="1463559367000" expanded="true" signature="49037:49194" placeholder="insert into ..." />
+                <marker date="1463559367000" expanded="true" signature="49583:49743" placeholder="insert into ..." />
+                <marker date="1463559367000" expanded="true" signature="50487:50682" placeholder="insert into ..." />
+                <marker date="1463559367000" expanded="true" signature="51555:51781" placeholder="insert into ..." />
+                <marker date="1463559367000" expanded="true" signature="55318:55402" placeholder="delete from ..." />
+                <marker date="1463559367000" expanded="true" signature="55470:55622" placeholder="insert into ..." />
+                <marker date="1463559367000" expanded="true" signature="55815:55912" placeholder="select instr..missing_value..." />
+                <marker date="1463559367000" expanded="true" signature="56001:56108" placeholder="select instr..missing_value..." />
+                <marker date="1463559367000" expanded="true" signature="56275:56341" placeholder="select price..missing_value..." />
+                <marker date="1463559367000" expanded="true" signature="77820:78177" placeholder="insert into ..." />
+                <marker date="1463559367000" expanded="true" signature="79153:79273" placeholder="update missi..." />
+                <marker date="1463559367000" expanded="true" signature="79703:79870" placeholder="update missi..." />
+                <marker date="1463559367000" expanded="true" signature="88391:88537" placeholder="insert into ..." />
+                <marker date="1463559367000" expanded="true" signature="89496:89544" placeholder="update missi..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="run_fama_market_close.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bin/run_fama_market_close.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.6666666">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="run_fama_market_open.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bin/run_fama_market_open.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.1111112">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sample1_strategy_param.ini" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/sample1_strategy_param.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/bin/run_fama_market_close.sh" />
+        <option value="$PROJECT_DIR$/bin/run_fama_market_open.sh" />
+        <option value="$PROJECT_DIR$/bin/fama_factors.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1920" />
+    <option name="y" value="-122" />
+    <option name="width" value="1920" />
+    <option name="height" value="1006" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algo_fama_factors" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algo_fama_factors" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algo_fama_factors" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algo_fama_factors" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algo_fama_factors" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="conf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algo_fama_factors" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algo_fama_factors" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d195fece-9531-4c56-a619-4db2bfe196ab" name="Default" comment="" />
+      <created>1463539442116</created>
+      <option name="number" value="Default" />
+      <updated>1463539442116</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1920" y="-122" width="1920" height="1006" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/bin/run_fama_market_close.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6666666">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/run_fama_market_open.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1111112">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/sample1_strategy_param.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/fama_factors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.69965076">
+          <caret line="112" column="33" selection-start-line="112" selection-start-column="33" selection-end-line="112" selection-end-column="33" />
+          <folding>
+            <element signature="e#6029#12248#0" expanded="false" />
+            <element signature="e#12317#12414#0" expanded="false" />
+            <element signature="e#21550#22737#0" expanded="false" />
+            <element signature="e#22774#23629#0" expanded="false" />
+            <element signature="e#76042#80288#0" expanded="false" />
+            <marker date="1463559367000" expanded="true" signature="16655:16772" placeholder="select cash,..missing_value..." />
+            <marker date="1463559367000" expanded="true" signature="18379:18459" placeholder="select times..." />
+            <marker date="1463559367000" expanded="true" signature="18910:18993" placeholder="select instr..missing_value..." />
+            <marker date="1463559367000" expanded="true" signature="19436:19512" placeholder="select count..daily_fundamental..." />
+            <marker date="1463559367000" expanded="true" signature="19436:19535" placeholder="select count..daily_fundamental..." />
+            <marker date="1463559367000" expanded="true" signature="19800:19936" placeholder="select instr..daily_fundamental..." />
+            <marker date="1463559367000" expanded="true" signature="19800:20006" placeholder="select instr..daily_fundamental..." />
+            <marker date="1463559367000" expanded="true" signature="20073:20154" placeholder="select instr..daily_fundamental..." />
+            <marker date="1463559367000" expanded="true" signature="20073:20206" placeholder="select instr..daily_fundamental..." />
+            <marker date="1463559367000" expanded="true" signature="20073:20207" placeholder="select instr..daily_fundamental..." />
+            <marker date="1463559367000" expanded="true" signature="20073:20274" placeholder="select instr..daily_fundamental..." />
+            <marker date="1463559367000" expanded="true" signature="21024:21129" placeholder="select instr..missing_value..." />
+            <marker date="1463559367000" expanded="true" signature="21595:21752" placeholder="select signa..." />
+            <marker date="1463559367000" expanded="true" signature="22342:22427" placeholder="update signa..." />
+            <marker date="1463559367000" expanded="true" signature="22818:23025" placeholder="select order..missing_value..." />
+            <marker date="1463559367000" expanded="true" signature="23876:24029" placeholder="insert into ..." />
+            <marker date="1463559367000" expanded="true" signature="24256:24468" placeholder="select times..." />
+            <marker date="1463559367000" expanded="true" signature="25459:25868" placeholder="select a.ins..missing_value..." />
+            <marker date="1463559367000" expanded="true" signature="25566:25685" placeholder="select max(t..." />
+            <marker date="1463559367000" expanded="true" signature="27845:28056" placeholder="select times..." />
+            <marker date="1463559367000" expanded="true" signature="29255:29524" placeholder="select times..." />
+            <marker date="1463559367000" expanded="true" signature="36793:36959" placeholder="select times..." />
+            <marker date="1463559367000" expanded="true" signature="39144:39282" placeholder="select instr..." />
+            <marker date="1463559367000" expanded="true" signature="49037:49194" placeholder="insert into ..." />
+            <marker date="1463559367000" expanded="true" signature="49583:49743" placeholder="insert into ..." />
+            <marker date="1463559367000" expanded="true" signature="50487:50682" placeholder="insert into ..." />
+            <marker date="1463559367000" expanded="true" signature="51555:51781" placeholder="insert into ..." />
+            <marker date="1463559367000" expanded="true" signature="55318:55402" placeholder="delete from ..." />
+            <marker date="1463559367000" expanded="true" signature="55470:55622" placeholder="insert into ..." />
+            <marker date="1463559367000" expanded="true" signature="55815:55912" placeholder="select instr..missing_value..." />
+            <marker date="1463559367000" expanded="true" signature="56001:56108" placeholder="select instr..missing_value..." />
+            <marker date="1463559367000" expanded="true" signature="56275:56341" placeholder="select price..missing_value..." />
+            <marker date="1463559367000" expanded="true" signature="77820:78177" placeholder="insert into ..." />
+            <marker date="1463559367000" expanded="true" signature="79153:79273" placeholder="update missi..." />
+            <marker date="1463559367000" expanded="true" signature="79703:79870" placeholder="update missi..." />
+            <marker date="1463559367000" expanded="true" signature="88391:88537" placeholder="insert into ..." />
+            <marker date="1463559367000" expanded="true" signature="89496:89544" placeholder="update missi..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
